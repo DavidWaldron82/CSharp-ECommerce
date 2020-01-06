@@ -31,6 +31,9 @@ namespace ECommerce.Models {
         [Compare("Password")]
         [DataType(DataType.Password)]
         public string ConfirmPassword {get;set;}
+        public List<Review> UReviews {get;set;}
+        public List<Product> UProducts {get;set;}
+
 
     }
 }
