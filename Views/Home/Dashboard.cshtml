@@ -1,3 +1,11 @@
 @model ViewModel
 <h1>Welcome, @Model.OneUser.UserName</h1>
- <a href="New">Add Product</a>
+ <a href="NewProd">Add Product</a>
+ @{
+     foreach(Product x in @Model.AllProducts) {
+         <img src=@x.Image>
+         <p>@x.ProductName</p>
+         <p>@x.Price</p>
+
+     }
+ }

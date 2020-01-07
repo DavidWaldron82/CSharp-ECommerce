@@ -29,3 +29,4 @@ C:\Users\david_000\Desktop\Code\c#\Entity\ECommerce\obj\MCD\Debug\netcoreapp2.2\
 C:\Users\david_000\Desktop\Code\c#\Entity\ECommerce\obj\MCD\Debug\netcoreapp2.2\ECommerce.pdb
 C:\Users\david_000\Desktop\Code\c#\Entity\ECommerce\obj\MCD\Debug\netcoreapp2.2\ECommerce.csproj.CopyComplete
 C:\Users\david_000\Desktop\Code\c#\Entity\ECommerce\obj\MCD\Debug\netcoreapp2.2\Razor\Views\Home\Dashboard.g.cshtml.cs
+C:\Users\david_000\Desktop\Code\c#\Entity\ECommerce\obj\MCD\Debug\netcoreapp2.2\Razor\Views\Home\NewProd.g.cshtml.cs

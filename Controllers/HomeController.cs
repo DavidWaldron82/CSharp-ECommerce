@@ -88,6 +88,42 @@ namespace ECommerce.Controllers
                 return View("Index");
             }
             }
+        [HttpGet("NewProd")]
+        public IActionResult NewProd() {
+            ViewModel Newview = new ViewModel
+            {
+                OneProduct = new Product()
+            };
+            return View();
+        }
+        [HttpPost("createproduct")]
+        public IActionResult CreateProduct(ViewModel data){
+            if(ModelState.IsValid){
+            Product e = new Product
+            
+            {
+                UserId = dbContext.Users.FirstOrDefault(us => us.UserId == (int)HttpContext.Session.GetInt32("logged_user")).UserId,
+                ProductName = data.OneProduct.ProductName,
+                Category = data.OneProduct.Category,
+                Price = data.OneProduct.Price,
+                Description = data.OneProduct.Description,
+                Image = data.OneProduct.Image,
+            };
+           
+                dbContext.Products.Add(e);
+                dbContext.SaveChanges();
+            return RedirectToAction("Dashboard");
+            } else {
+                // ModelState.AddModelError("EventName","What's the big event?");
+                // ModelState.AddModelError("Event","What's the big event?");
+                // ModelState.AddModelError("Event","What's the big event?");
+                // ModelState.AddModelError("Event","What's the big event?");
+                // ModelState.AddModelError("Event","What's the big event?");
+                // ModelState.AddModelError("Event","What's the big event?");
+                // ModelState.AddModelError("Event","What's the big event?");
+                return View("NewProd", data);
+            }
+        }
 
         public IActionResult Privacy()
         {

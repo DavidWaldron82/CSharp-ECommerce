@@ -3004,6 +3004,11 @@
       "FilePath": "c:\\Users\\david_000\\Desktop\\Code\\c#\\Entity\\ECommerce\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\david_000\\Desktop\\Code\\c#\\Entity\\ECommerce\\Views\\Home\\NewProd.cshtml",
+      "TargetPath": "Views\\Home\\NewProd.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

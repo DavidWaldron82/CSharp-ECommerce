@@ -1,0 +1,37 @@
+@model ViewModel
+<h1>Dojo Activity Center</h1>
+<a href="/Dashboard">Home</a>
+<a href="/clear">Logout</a>
+<h3>What would you like to sell</h3>
+<div class="text-center">
+    
+    </div>
+        <form action="/createproduct" method="post">
+            <div class="form-group">
+                <label>Name:</label>
+                <input asp-for="OneProduct.ProductName" class="form-control">
+                <span asp-validation-for="OneProduct.ProductName"></span>
+            </div>
+            <div class="form-group">
+                <label>Category:</label>
+                <input asp-for="OneProduct.Category" class="form-control">
+                <span asp-validation-for="OneProduct.Category"></span>
+            </div>
+            <div class="form-group">
+                <label>Price:</label>
+                <input asp-for="OneProduct.Price" class="form-control">
+                <span asp-validation-for="OneProduct.Price"></span>
+            </div>
+            <div class="form-group">
+                <label>Description:</label>
+                <textarea asp-for="OneProduct.Description" class="form-control"rows="3"></textarea>
+                <span asp-validation-for="OneProduct.Description"></span>
+            </div>
+            <div class="form-group">
+                <label>Image:</label>
+                <input asp-for="OneProduct.Image" class="form-control">
+                <span asp-validation-for="OneProduct.Image"></span>
+            </div>
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </div>
